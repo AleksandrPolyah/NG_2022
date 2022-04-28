@@ -7,7 +7,6 @@ int main(){
     float videocard;
     float motherboard;
     float discount;
-    float sum;
     cout << "Motherboard price: " << endl;
     cin >> motherboard;
     cout << "Videocard price: " << endl;
@@ -16,6 +15,5 @@ int main(){
     cin >> cpu;
     cout << "Discount: " << endl;
     cin >> discount;
-    sum = (motherboard + videocard + cpu) - ((discount / 100) * (motherboard + cpu + videocard));
-    cout << "Your PC will cost: " << sum << endl;
+    cout << "Your PC will cost: " << (motherboard + videocard + cpu) - ((discount / 100) * (motherboard + cpu + videocard));
 }
