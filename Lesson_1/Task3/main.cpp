@@ -11,19 +11,21 @@ int main()
     cout << "Enter your age: " << endl;
     cin >> age;
 
-    if(age > 10){
+    if(age >= 10){
         cout << "Do you study(1/0): " << endl;
         cin >> study;
+        if(study == 1){
+            cout << "You're cool." << endl;
+        }
+        else{
+            cout << "Why?" << endl;
+        }
     }
-     if(study == 1){
-         cout << "You're cool." << endl;
-     }
-     if(study == 0){
-         cout << "Why?" << endl;
-     }
+    else{
+        cout << "Wow, you're so big already" << endl;
 
-     if(age < 10){
-         cout << "Wow, you're so big already" << endl;
-     }
+    }
 
 }
+
+
