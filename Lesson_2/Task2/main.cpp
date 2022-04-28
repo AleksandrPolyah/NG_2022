@@ -9,12 +9,10 @@ int main()
     cin >> n;
     int sum = 0;
     int help_me = n;
-    int s = 0;
     for(int i = 0; help_me > 1;i++)
     {
-        s = help_me % 10;
-        if(s % 2 == 0)
-            sum += s;
+        if(help_me % 10 % 2 == 0)
+            sum += help_me % 10;
         help_me /= 10;
 
     }
