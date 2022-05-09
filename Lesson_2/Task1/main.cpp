@@ -12,14 +12,14 @@ int main()
         for (int j = 0;j < size;j++)
         {
             if (i != 0 && i != size - 1 && j != 0 && j != size - 1)
-			{
-				cout << " ";
-			}
-			else
-			{
-				cout << "*";
-			}
+		{
+		   cout << " ";
 		}
-		cout << endl;
+	    else
+		{
+		   cout << "*";
+		}
 	}
+	cout << endl;
+    }
 }
