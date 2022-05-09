@@ -8,12 +8,11 @@ int main()
     cout << "Enter your number: " << endl;
     cin >> n;
     int sum = 0;
-    int help_me = n;
-    for(int i = 0; help_me > 1;i++)
+    for(int i = n; i != 0;)
     {
-        if(help_me % 10 % 2 == 0)
-            sum += help_me % 10;
-        help_me /= 10;
+        if(i % 10 % 2 == 0)
+            sum += i % 10;
+        i /= 10;
 
     }
     cout << "Sum of even numbers are: " << sum;
